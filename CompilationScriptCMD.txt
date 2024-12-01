@@ -1,0 +1,11 @@
+cd C:/program files/apache software foundation/tomcat 11.0/webapps/Project4/web-inf/classes
+
+javac -cp ".;../lib/*" ClientUserServlet.java
+
+javac -cp ".;../lib/*" RootUserServlet.java
+
+javac -cp "../lib/*" Authentication.java
+
+javac -cp "../lib/*" AccountantServlet.java
+
+javac -cp "../lib/*" ResultSetToHTML.java

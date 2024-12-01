@@ -1,0 +1,49 @@
+<web-app xmlns="http://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://jakarta.ee/xml/ns/jakartaee
+         http://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <display-name>Enterprise Project 4</display-name>
+
+    <welcome-file-list>
+        <welcome-file>authentication.html</welcome-file>
+    </welcome-file-list>
+
+    <description>A Three-Tier Distributed Web-Based Application</description>
+
+    <servlet>
+        <servlet-name>Authentication</servlet-name>
+        <servlet-class>Authentication</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Authentication</servlet-name>
+        <url-pattern>/Authentication</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RootUser</servlet-name>
+        <servlet-class>RootUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RootUser</servlet-name>
+        <url-pattern>/RootUserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ClientUser</servlet-name>
+        <servlet-class>ClientUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClientUser</servlet-name>
+        <url-pattern>/ClientUserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AccountantUser</servlet-name>
+        <servlet-class>AccountantServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AccountantUser</servlet-name>
+        <url-pattern>/AccountantServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

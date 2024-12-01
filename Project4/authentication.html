@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication - Project 4</title>
+    <style>
+        body {
+            background: black;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: yellow;
+            font-size: 28pt;
+        }
+        h2 {
+            color: lime;
+            font-size: 24pt;
+        }
+        form {
+            display: inline-block;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-size: 18pt;
+            color: yellow;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="password"] {
+            background: #665D1E;
+            color: yellow;
+            font-size: 16pt;
+            font-weight: bold;
+            border: 2px solid yellow;
+            border-radius: 5px;
+            padding: 5px 10px;
+            width: 300px;
+        }
+        input[type="submit"], input[type="reset"] {
+            font-size: 16pt;
+            font-weight: bold;
+            margin: 20px 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"] {
+            color: lime;
+            background-color: #004400;
+        }
+        input[type="reset"] {
+            color: red;
+            background-color: #440000;
+        }
+        .error {
+            color: red;
+            font-size: 14pt;
+        }
+        hr {
+            border: 1px solid yellow;
+            margin: 20px auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Enterprise Project 4</h1>
+    <h2>A Servlet/JSP-Based Multi-Tiered Enterprise Application</h2>
+    <h2 style="color: red; font-size: 24pt;">User Authentication Page</h2>
+    <hr>
+    <form action="Authentication" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass" required>
+        <div>
+            <input type="submit" value="Authenticate">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    <hr>
+</body>
+</html>
